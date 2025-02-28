@@ -18,7 +18,7 @@ To build and run the bot using Docker Compose, follow these steps:
 
     services:
       discord-llm-bot:
-        image: ghcr.io/sourcequality/discord-llm-bot:latest
+        image: ghcr.io/sourcequality/discord-llm-bot
         environment:
           - DISCORD_TOKEN=#YOURDISCORDTOKEN
           - API_KEY=#YOURAPIKEY
