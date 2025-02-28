@@ -14,17 +14,17 @@ To build and run the bot using Docker Compose, follow these steps:
 1. **Create a `docker-compose.yml` file** with the following content:
 
     ```yaml
-  services:
-    discord-llm-bot:
-      image: ghcr.io/sourcequality/discordllmbot:main
-      environment:
-        - DISCORD_TOKEN=#YOURDISCORDTOKEN
-        - API_KEY=#YOURAPIKEY
-        - API_URL="https://api.openai.com/v1" # Defaults to https://api.openai.com/v1
-        - SYSTEM_PROMPT="You are a Discord chatbot, respond in short messages."
-        - MODEL=#MODEL NAME
-        - LOG_LEVEL=#INFO/DEBUG
-      restart: unless-stopped
+    services:
+      discord-llm-bot:
+        image: ghcr.io/sourcequality/discordllmbot:main
+        environment:
+          - DISCORD_TOKEN=#YOURDISCORDTOKEN
+          - API_KEY=#YOURAPIKEY
+          - API_URL="https://api.openai.com/v1" # Defaults to https://api.openai.com/v1
+          - SYSTEM_PROMPT="You are a Discord chatbot, respond in short messages."
+          - MODEL=#MODEL NAME
+          - LOG_LEVEL=#INFO/DEBUG
+        restart: unless-stopped
     ```
 
 2. **Build and run the Docker container**:
