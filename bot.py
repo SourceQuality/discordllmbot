@@ -238,10 +238,9 @@ async def on_message(message):
 
     content = message.content.lower()
     should_respond = (
-        '?' in content or
+        'robot' in content or
         'hey bot' in content or
-        'what do you think' in content or
-        len(content) > 20
+        'bot' in content or
     )
 
     if should_respond:
