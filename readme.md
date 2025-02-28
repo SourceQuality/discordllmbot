@@ -27,10 +27,10 @@ To build and run the bot using Docker Compose, follow these steps:
         restart: unless-stopped
     ```
 
-2. **Build and run the Docker container**:
+2. **Run the Docker container**:
 
     ```sh
-    docker-compose up --build
+    docker-compose up
     ```
 
 3. **Access the bot**: Once the container is running, the bot will be active and ready to respond to messages in your Discord server.
